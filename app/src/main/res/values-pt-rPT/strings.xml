@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">38128_42575</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="action_authenticate">Autenticação</string>
+    <string name="Error_invalid_credentials">Credenciais Inválidas</string>
+</resources>

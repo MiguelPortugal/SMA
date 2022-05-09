@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">38128_42575</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="action_authenticate">Authenticate</string>
+    <string name="Error_invalid_credentials">Invalid Credentials</string>
+</resources>
