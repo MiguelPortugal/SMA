@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="pt.atp.a38128_42575">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
 
@@ -20,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
+        <activity android:name=".ListActivity" />
         <activity android:name=".DetailsActivity" />
     </application>
 

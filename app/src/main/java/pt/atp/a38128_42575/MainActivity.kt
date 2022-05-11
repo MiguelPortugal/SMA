@@ -11,6 +11,7 @@ import android.widget.*
 import androidx.core.app.ActivityCompat.startActivityForResult
 import androidx.core.content.ContextCompat.startActivity
 import androidx.lifecycle.ViewModel
+import com.bumptech.glide.Glide
 
 private const val IMAGE = 500
 private const val FILM = 500
@@ -20,7 +21,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var timer: CountDownTimer
     private var untilFinished = 10000L
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,8 +39,11 @@ class MainActivity : AppCompatActivity() {
             Gallery()
         }
         findViewById<Button>(R.id.button5).setOnClickListener {
-            openDetailsActivity()
+            openListActivity()
         }
+
+
+
     }
 
     override fun onResume() {
@@ -61,6 +64,7 @@ class MainActivity : AppCompatActivity() {
             findViewById<ImageView>(R.id.imageView3).setImageBitmap(imageBitmap)
         }
 
+
         super.onActivityResult(requestCode, resultCode, data)
     }
 
@@ -78,10 +82,12 @@ class MainActivity : AppCompatActivity() {
         intent.setType("video/*")
         startActivityForResult(intent, FILM)
     }
-    private fun openDetailsActivity(){
-        val intent = Intent(this, DetailsActivity::class.java)
+    private fun openListActivity(){
+        val intent = Intent(this, ListActivity::class.java)
         startActivity(intent)
     }
+
+
 
     private fun startCountDownTimer (time: Long){
         timer = object: CountDownTimer(time, 10000){
