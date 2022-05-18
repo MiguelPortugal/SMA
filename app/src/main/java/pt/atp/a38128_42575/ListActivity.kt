@@ -1,17 +1,17 @@
 package pt.atp.a38128_42575
 
-import android.nfc.Tag
+
 import android.os.Bundle
-import android.os.PersistableBundle
+
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import pt.atp.a38128_42575.data.CatsAPI
+
 import pt.atp.a38128_42575.data.CatsAPIClient
 import pt.atp.a38128_42575.data.cb.DataRetriver
 import pt.atp.a38128_42575.data.model.Breed
-import kotlin.math.log
+
 
 
 private const val TAG =  "ListActivity"
